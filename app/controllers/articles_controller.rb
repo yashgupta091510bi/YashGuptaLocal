@@ -26,7 +26,7 @@ end
 
 def destroy
 
-  @article.destroy
+  @article.destroy(article_params)
   flash[:notice]= "Article was succesfully deleted"
   redirect_to articles_path
 end
